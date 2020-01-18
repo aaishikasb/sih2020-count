@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+	<title>Smart India Hackathon- SRM</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="srm, srm university, siic, smart india Hackathon, mhrd, srmiic, smart india, Hackathon, sih, 2019, sih2019, srm 2019, srm ist, srm institute of science and technology" />
+	<meta name="description" content="Official Website of SIH 2019 at SRM Institute of Science and Technology">
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container container-fluid text-center"><br><br>
+    <h1 class="display-2">Smart India Hackathon 2020</h1>
+    <h1 class="display-3">Internal Hackathon<br>Hardware Edition</h1>
+    <h1 class="display-1" id="demo"></h1>
+                    <img src="images/srm.png" height="150" width="150" alt="srm" style="border-radius: 65px;"  id="im"> &nbsp; &nbsp;
+					<img src="images/sih.jpg" height="150" width="150" alt="sih" style="border-radius: 65px;"  id="in"> &nbsp; &nbsp;
+					<img src="images/fab.png" height="150" width="150" alt="fablab" style="border-radius: 65px;"  id="io"> &nbsp; &nbsp;
+					<img src="images/siic.jpg" height="150" width="150" alt="siic" style="border-radius: 65px;"  id="ip">
+</div>
+<script>
+    var countDownDate = new Date("Jan 19, 2020 09:00:00").getTime();
+    var x = setInterval(function() {
+    
+      var now = new Date().getTime();
+    
+      var distance = countDownDate - now;
+    
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      document.getElementById("demo").innerHTML = days + "D " + hours + "H "
+      + minutes + "M " + seconds + "S ";
+    
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("im").width = "150";
+        document.getElementById("im").height = "150";
+        document.getElementById("in").width = "150";
+        document.getElementById("in").height = "150";
+        document.getElementById("io").width = "150";
+        document.getElementById("io").height = "150";
+        document.getElementById("ip").width = "150";
+        document.getElementById("ip").height = "150";
+        document.getElementById("demo").innerHTML = "Live Now!";
+      }
+    }, 1000);
+    </script>
+</body>
+</html>
